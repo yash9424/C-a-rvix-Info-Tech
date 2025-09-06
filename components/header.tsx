@@ -52,9 +52,9 @@ export default function Header() {
               <span className="sr-only">Toggle theme</span>
             </Button>
 
-            <button className="hidden sm:block border border-gray-300 dark:border-gray-600 px-4 sm:px-6 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors text-sm sm:text-base">
+            <Link href="/contact" className="hidden sm:block border border-gray-300 dark:border-gray-600 px-4 sm:px-6 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors text-sm sm:text-base">
               Contact Us
-            </button>
+            </Link>
 
             <Button
               variant="ghost"
@@ -107,9 +107,9 @@ export default function Header() {
               </nav>
             </div>
             <div className="p-6">
-              <button className="w-full border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors text-lg">
+              <Link href="/contact" className="w-full text-center border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors text-lg block">
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>
