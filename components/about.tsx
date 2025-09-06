@@ -66,7 +66,7 @@ export default function About() {
               </span>
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed max-w-2xl">
-              Webjet technology is a budding company armed with experienced individuals excelling in serving and
+              Cłaîrvix Info Tech is a budding company armed with experienced individuals excelling in serving and
               executing client's IT requirement. Like every successful journey, we started by training and excelling as
               individuals with a goal to serve the businesses digitalize themselves in order to add value and success to
               their businesses. Optimization and expected execution are the objectives we cater to best of our

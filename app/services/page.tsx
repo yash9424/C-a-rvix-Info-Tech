@@ -1,13 +1,6 @@
-"use client"
-
-import { Moon, Sun, Code, Palette, Smartphone, Users, TrendingUp, Settings } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Code, Palette, Smartphone, Users, TrendingUp, Settings } from "lucide-react"
 
 export default function Services() {
-  const { theme, setTheme } = useTheme()
-
   const services = [
     {
       icon: <Code className="w-12 h-12" />,
@@ -72,68 +65,9 @@ export default function Services() {
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
-      {/* Header */}
-      <header className="bg-white dark:bg-gray-900 px-6 py-4 transition-colors">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <div className="text-2xl font-bold text-gray-900 dark:text-white">
-              Cłaîr<span className="text-blue-500">v</span>ix Info Tech
-            </div>
-          </Link>
-
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-            >
-              About us
-            </Link>
-            <a
-              href="#"
-              className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium border-b-2 border-blue-600 pb-1"
-            >
-              Services
-            </a>
-            <Link
-              href="/portfolio"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-            >
-              Portfolio
-            </Link>
-            <a
-              href="#"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-            >
-              Careers
-            </a>
-          </nav>
-
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-            <button className="border border-gray-300 dark:border-gray-600 px-6 py-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 py-20 transition-colors">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 min-h-screen flex items-center transition-colors">
         <div className="max-w-7xl mx-auto text-center text-white">
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-transparent" style={{ WebkitTextStroke: "2px #ffffff", color: "transparent" }}>
@@ -277,97 +211,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-white px-6 py-16 transition-colors">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div className="md:col-span-2">
-              <Link href="/" className="flex items-center mb-4">
-                <div className="text-2xl font-bold">
-                  Cłaîr<span className="text-blue-500">v</span>ix Info Tech
-                </div>
-              </Link>
-              <p className="text-gray-300 leading-relaxed max-w-md">
-                We believe in the power and control offered to us by having flexibility and freedom to be creative and
-                innovative. Our commitment to excellence drives us to deliver outstanding results.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-gray-300">
-                <li>
-                  <Link href="/" className="hover:text-white">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-white">
-                    About us
-                  </Link>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white">
-                    Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white">
-                    Careers
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4">Contact Info</h3>
-              <div className="space-y-3 text-gray-300">
-                <div className="flex items-center space-x-2">
-                  <span>📞</span>
-                  <span>+91 9988556644</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>✉️</span>
-                  <span>webjet.official@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>📍</span>
-                  <span>
-                    Webjet Office
-                    <br />
-                    Sector 34, Chandigarh 160022
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="flex space-x-4 mb-4 md:mb-0">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  📘
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  🐦
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  📷
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  💼
-                </a>
-              </div>
-              <p className="text-gray-400 text-sm">© 2024 Cłaîrvix Info Tech. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
   )
 }

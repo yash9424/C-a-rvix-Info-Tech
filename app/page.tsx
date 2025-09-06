@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
 
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 py-20 overflow-hidden transition-colors">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 min-h-screen flex items-center overflow-hidden transition-colors">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
@@ -126,7 +126,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                Webjet technology is a budding company armed with experienced individuals excelling in serving and
+                Cłaîrvix Info Tech is a budding company armed with experienced individuals excelling in serving and
                 executing client's IT requirement. Like every successful journey, we started by training and excelling
                 as individuals with a goal to serve the businesses digitalize themselves in order to add value and
                 success to their businesses. Optimization and expected execution are the objectives we cater to best of
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-bold text-blue-500 mb-6">Web Development</h3>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
-              At Webjet, our web development services involve crafting tailored and scalable websites and web
+              At Cłaîrvix Info Tech, our web development services involve crafting tailored and scalable websites and web
               applications to meet our clients' unique requirements. Our expertise lies in creating visually appealing
               user interfaces through front-end development, ensuring a seamless and engaging user experience. Our
               expertise extends to back-end development for robust server-side functionality and efficient database
@@ -216,7 +216,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                Webjet technology is a budding company armed with experienced individuals excelling in serving and
+                Cłaîrvix Info Tech is a budding company armed with experienced individuals excelling in serving and
                 executing client's IT requirement. Like every successful journey, we started by training and excelling
                 as individuals with a goal to serve the businesses digitalize themselves in order to add value and
                 success to their businesses. Optimization and expected execution are the objectives we cater to best of
