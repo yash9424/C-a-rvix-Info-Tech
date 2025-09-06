@@ -115,23 +115,26 @@ export default function Portfolio() {
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 transition-colors overflow-hidden h-screen flex items-center">
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 min-h-screen flex items-center transition-colors overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src="/Clairvix Info Tech Portfolio Video_free.mp4" type="video/mp4" />
+        </video>
         <div className="max-w-7xl mx-auto text-center text-white relative z-10 w-full">
-          <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000" 
-               id="hero-title" 
-               style={visibleItems.has('hero-title') ? {opacity: 1, transform: 'translateY(0)'} : {}}>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-transparent" style={{ WebkitTextStroke: "2px #ffffff", color: "transparent" }}>
-                OUR{" "}
-              </span>
-              <span className="text-blue-400">PORTFOLIO</span>
-            </h1>
-            <p className="text-xl text-blue-100 dark:text-blue-200 max-w-3xl mx-auto leading-relaxed">
-              Showcasing our expertise across web development, mobile applications, and software solutions
-            </p>
-          </div>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-transparent" style={{ WebkitTextStroke: "2px #ffffff", color: "transparent" }}>
+              OUR{" "}
+            </span>
+            <span className="text-blue-400">PORTFOLIO</span>
+          </h1>
+          <p className="text-xl text-blue-100 dark:text-blue-200 max-w-3xl mx-auto leading-relaxed">
+            Showcasing our expertise across web development, mobile applications, and software solutions
+          </p>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
       </section>
 
       {/* Filter Section */}
