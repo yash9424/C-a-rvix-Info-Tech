@@ -69,29 +69,47 @@ export default function Header() {
       </header>
 
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-50" onClick={() => setIsMenuOpen(false)}>
-          <div className="fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out">
-            <div className="p-6 pt-20">
-              <nav className="space-y-6">
-                <Link href="/" className="block text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg" onClick={() => setIsMenuOpen(false)}>
+        <div className="lg:hidden fixed inset-0 z-40 bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out">
+          <div className="flex flex-col h-full">
+            <div className="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-700">
+              <Link href="/" className="flex items-center space-x-3">
+                <img src="/logo.svg" alt="Cłaîrvix Info Tech" className="w-8 h-8" />
+                <div className="text-xl font-bold text-gray-900 dark:text-white">
+                  Cłaîr<span className="text-blue-500">v</span>ix Info Tech
+                </div>
+              </Link>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-600 dark:text-gray-300"
+              >
+                <X className="h-6 w-6" />
+              </Button>
+            </div>
+            <div className="flex-1 flex items-center justify-center">
+              <nav className="text-center space-y-8">
+                <Link href="/" className="block text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 font-medium text-2xl" onClick={() => setIsMenuOpen(false)}>
                   Home
                 </Link>
-                <Link href="/about" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/about" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-2xl" onClick={() => setIsMenuOpen(false)}>
                   About us
                 </Link>
-                <Link href="/services" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/services" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-2xl" onClick={() => setIsMenuOpen(false)}>
                   Services
                 </Link>
-                <Link href="/portfolio" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/portfolio" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-2xl" onClick={() => setIsMenuOpen(false)}>
                   Portfolio
                 </Link>
-                <a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-lg" onClick={() => setIsMenuOpen(false)}>
+                <a href="#" className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium text-2xl" onClick={() => setIsMenuOpen(false)}>
                   Careers
                 </a>
-                <button className="w-full mt-6 border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors">
-                  Contact Us
-                </button>
               </nav>
+            </div>
+            <div className="p-6">
+              <button className="w-full border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 font-medium transition-colors text-lg">
+                Contact Us
+              </button>
             </div>
           </div>
         </div>

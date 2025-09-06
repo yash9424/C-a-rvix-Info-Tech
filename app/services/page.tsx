@@ -67,18 +67,38 @@ export default function Services() {
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 min-h-screen flex items-center transition-colors">
-        <div className="max-w-7xl mx-auto text-center text-white">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-transparent" style={{ WebkitTextStroke: "2px #ffffff", color: "transparent" }}>
-              OUR{" "}
-            </span>
-            <span className="text-blue-400">SERVICES</span>
-          </h1>
-          <p className="text-xl text-blue-100 dark:text-blue-200 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive digital solutions tailored to transform your business and drive growth through innovative
-            technology
-          </p>
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 dark:from-blue-800 dark:via-blue-900 dark:to-gray-900 px-6 min-h-screen flex items-center transition-colors overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src="/Clairvix Info Tech  Innovating Your Success_free.mp4" type="video/mp4" />
+        </video>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center w-full relative z-10">
+          <div className="text-white">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+              <span className="text-transparent" style={{ WebkitTextStroke: "2px #ffffff", color: "transparent" }}>
+                OUR{" "}
+              </span>
+              <span className="text-blue-400">SERVICES</span>
+            </h1>
+            <p className="text-xl text-blue-100 dark:text-blue-200 leading-relaxed">
+              Comprehensive digital solutions tailored to transform your business and drive growth through innovative
+              technology
+            </p>
+          </div>
+          <div className="relative">
+            <video
+              autoPlay
+              loop
+              controls
+              className="w-full h-auto rounded-lg shadow-lg"
+            >
+              <source src="/Clairvix Info Tech  Innovating Your Success_free.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 

@@ -5,6 +5,7 @@ import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import Link from "next/link"
+import DrawingAnimation from "@/components/drawing-animation"
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
@@ -66,30 +67,7 @@ export default function Home() {
               </p>
             </div>
             <div className="relative hidden lg:block">
-              <div className="relative z-20 bg-gray-300 dark:bg-gray-600 rounded-lg p-4 w-80 h-48 mx-auto transform rotate-12 transition-colors">
-                <div className="bg-gray-400 dark:bg-gray-500 rounded-full w-3 h-3 absolute top-2 left-1/2 transform -translate-x-1/2"></div>
-                <div className="bg-white dark:bg-gray-800 rounded h-40 mt-4 p-4 transition-colors">
-                  <div className="space-y-2">
-                    <div className="bg-gray-200 dark:bg-gray-600 h-2 w-3/4 rounded"></div>
-                    <div className="bg-gray-200 dark:bg-gray-600 h-2 w-1/2 rounded"></div>
-                    <div className="bg-gray-200 dark:bg-gray-600 h-2 w-2/3 rounded"></div>
-                  </div>
-                  <div className="bg-gray-300 dark:bg-gray-500 rounded-full w-16 h-16 mt-4 ml-auto"></div>
-                </div>
-              </div>
-              <div className="absolute top-20 right-0 z-30 bg-gray-800 dark:bg-gray-700 rounded-2xl p-2 w-20 h-36 transform -rotate-12 transition-colors">
-                <div className="bg-gray-600 dark:bg-gray-800 rounded-xl h-full p-2">
-                  <div className="bg-white dark:bg-gray-900 rounded-lg h-full p-2 transition-colors">
-                    <div className="space-y-1">
-                      <div className="bg-gray-200 dark:bg-gray-600 h-1 w-full rounded"></div>
-                      <div className="bg-gray-200 dark:bg-gray-600 h-1 w-3/4 rounded"></div>
-                    </div>
-                    <div className="bg-gray-300 dark:bg-gray-500 rounded-full w-8 h-8 mt-2 mx-auto"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute bottom-10 left-10 bg-blue-300 dark:bg-blue-400 rounded-full w-16 h-16 opacity-60"></div>
-              <div className="absolute top-10 right-20 bg-white dark:bg-gray-200 rounded-full w-3 h-3 opacity-80"></div>
+              <DrawingAnimation />
             </div>
           </div>
         </div>
